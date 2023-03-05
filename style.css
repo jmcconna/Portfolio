@@ -1,15 +1,20 @@
 :root{
     --textColor: black;
     --color1: white;
-    --color2: black;
+    --color2: rgba(111, 73, 216, 0.377);
     --color3: rgb(173, 207, 207);
     --color4: rgb(211, 165, 81); 
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: var(--color1);
     color: var(--textColor);
+    margin: 0;
 }
 
 header {
@@ -24,24 +29,15 @@ header h1 {
 
 nav {
     display: flex;
-    float: right;
-    margin-right: 40px;
-    padding-top: 15px;
+    background-color: var(--color2);
 }
 
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-a {
-    color: var(--color2);
+nav a {
+    color: var(--textColor);
     text-decoration: none;
     font-size: 24px;
+    padding: 14px 20px;
+    text-align: center;
 }
 
 p {
@@ -51,11 +47,14 @@ p {
 main {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 #workExamples {
-    /* display: flex;
-    flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+    justify-content: space-between;
 }
 
 article {
@@ -63,52 +62,56 @@ article {
     flex-wrap: wrap;
 }
 
-.hero {
+/* .hero {
 border-style: solid;
   border-width: 1px;
-  /* border-radius: 10px; */
+  border-radius: 10px; 
   padding: 10px;
-  /* width: 100%; */
+  width: 100%; 
   flex: 0 0 200px;
   background-color: var(--color4);
+} */
+
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./assets/images/pic5.webp");
+    background-size: cover;
+    background-position: center;
 }
 
 .card {
-  border-style: solid;
-  border-width: 1px;
-  /* border-radius: 10px; */
-  padding: 10px;
-  flex: 0 0 200px;
-  background-color: var(--color4);
+    border-style: solid;
+    border-color: var(--color2);
+    border-width: 5px;
+    padding: 10px;
+    flex: 0 0 200px;
+    background-color: var(--color1);
 }
 
 .card img {
     max-height: 200px;
+
 }
 
 aside {
- flex: 1;
- background-color: var(--color2);
- padding: 50px;
- text-align: center;
-}
-
-.sideTitles {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    background-color: var(--color3);
+    flex: 1;
+    background-color: var(--color1);
+    padding: 50px;
+    text-align: center;
 }
 
 #aboutMe {
     background-color: var(--color3);
+    padding: 40px;
+    display: block;
 }
 
 footer {
     background-color: var(--color3);
+    clear: both;
+    padding: 40px;
 }
 
 @media screen and (max-width: 768px) {
