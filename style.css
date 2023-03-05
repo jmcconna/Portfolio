@@ -30,6 +30,7 @@ header h1 {
 nav {
     display: flex;
     background-color: var(--color2);
+    /* position: fixed; */
 }
 
 nav a {
@@ -63,22 +64,29 @@ article {
 }
 
 /* .hero {
-border-style: solid;
-  border-width: 1px;
-  border-radius: 10px; 
-  padding: 10px;
-  width: 100%; 
-  flex: 0 0 200px;
-  background-color: var(--color4);
-} */
-
-.hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("./assets/images/pic5.webp");
     background-size: cover;
     background-position: center;
+} */
+
+.bigCard {
+    border-style: solid;
+    border-color: var(--color2);
+    border-width: 5px;
+    padding: 10px;
+    margin: 10px;
+    flex: 2 1 200px;
+    background-color: var(--color1);
+    
+}
+
+.bigCard img {
+    position: relative;
+    margin: auto;
+    flex: 1 2 auto;
 }
 
 .card {
@@ -86,13 +94,15 @@ border-style: solid;
     border-color: var(--color2);
     border-width: 5px;
     padding: 10px;
-    flex: 0 0 200px;
+    margin: 10px;
+    flex: 1 0 200px;
     background-color: var(--color1);
 }
 
 .card img {
     max-height: 200px;
-
+    position: relative;
+    margin: auto;
 }
 
 aside {
@@ -100,12 +110,20 @@ aside {
     background-color: var(--color1);
     padding: 50px;
     text-align: center;
+    border-right: 10px solid;
+    margin-right: 20px;
+    border-color: var(--textColor);
+    width: 25%; 
+}
+
+aside h2 {
+    font-size: 48px;
 }
 
 #aboutMe {
     background-color: var(--color3);
-    padding: 40px;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer {
@@ -118,5 +136,9 @@ footer {
     main,
     nav {
       flex-direction: column;
+    }
+
+    aside {
+        display: none;
     }
   }
