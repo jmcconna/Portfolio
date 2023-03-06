@@ -6,9 +6,9 @@
     --color4: rgb(211, 165, 81); 
 }
 
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 body {
     font-family: 'Courier New', Courier, monospace;
@@ -47,7 +47,7 @@ p {
 
 main {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin-bottom: 20px;
 }
 
@@ -73,12 +73,13 @@ article {
 } */
 
 .bigCard {
+    text-align: center;
     border-style: solid;
     border-color: var(--color2);
     border-width: 5px;
     padding: 10px;
     margin: 10px;
-    flex: 2 1 200px;
+    /* flex: 2 1 200px; */
     background-color: var(--color1);
     
 }
@@ -86,17 +87,30 @@ article {
 .bigCard img {
     position: relative;
     margin: auto;
-    flex: 1 2 auto;
+    /* flex: 1 2 auto; */
+    /* transform: scale(0.7); */
+    width: 400px;
+
+}
+
+#smallCards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .card {
+    text-align: center;
     border-style: solid;
     border-color: var(--color2);
     border-width: 5px;
     padding: 10px;
     margin: 10px;
-    flex: 1 0 200px;
+    /* flex: 1 0 200px; */
     background-color: var(--color1);
+    justify-content: space-between;
+    width: 300px;
 }
 
 .card img {
@@ -106,14 +120,14 @@ article {
 }
 
 aside {
-    flex: 1;
+    /* flex: 1; */
     background-color: var(--color1);
     padding: 50px;
     text-align: center;
     border-right: 10px solid;
     margin-right: 20px;
     border-color: var(--textColor);
-    width: 25%; 
+    width: 150px; 
 }
 
 aside h2 {
@@ -121,15 +135,22 @@ aside h2 {
 }
 
 #aboutMe {
-    background-color: var(--color3);
+    /* background-color: var(--color3); */
     display: flex;
-    flex-wrap: wrap;
+    /* width: 49.5%; */
+    /* flex-wrap: wrap; */
 }
 
 footer {
     background-color: var(--color3);
     clear: both;
     padding: 40px;
+}
+
+.border {
+    border-style: solid;
+    border-color: var(--color2);
+    border-width: 5px;
 }
 
 @media screen and (max-width: 768px) {
