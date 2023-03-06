@@ -1,7 +1,7 @@
 :root{
     --textColor: black;
     --color1: white;
-    --color2: rgba(111, 73, 216, 0.377);
+    --color2: rgb(165, 144, 224);
     --color3: rgb(173, 207, 207);
     --color4: rgb(211, 165, 81); 
 }
@@ -55,7 +55,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex: 4;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
 }
 
 article {
@@ -63,33 +64,38 @@ article {
     flex-wrap: wrap;
 }
 
-/* .hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("./assets/images/pic5.webp");
-    background-size: cover;
-    background-position: center;
-} */
+#bigCards {
+    justify-content: space-around;
+    align-items: center;
+}
 
 .bigCard {
     text-align: center;
     border-style: solid;
     border-color: var(--color2);
     border-width: 5px;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 10px;
     /* flex: 2 1 200px; */
     background-color: var(--color1);
+    width: 700px;
+    position: relative;
     
 }
 
 .bigCard img {
     position: relative;
-    margin: auto;
-    /* flex: 1 2 auto; */
-    /* transform: scale(0.7); */
-    width: 400px;
+    /* margin: auto; */
+    max-height: 350px;
+
+}
+
+.bigCard h2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    background-color: var(--color2);
 
 }
 
@@ -101,33 +107,44 @@ article {
 }
 
 .card {
-    text-align: center;
+    /* text-align: center; */
     border-style: solid;
     border-color: var(--color2);
     border-width: 5px;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 10px;
     /* flex: 1 0 200px; */
     background-color: var(--color1);
     justify-content: space-between;
     width: 300px;
+    position: relative;
+    
 }
 
 .card img {
-    max-height: 200px;
+    max-height: 300px;
     position: relative;
-    margin: auto;
+    /* margin: auto; */
+}
+
+.card h2 {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px;
+    background-color: var(--color2);
+
 }
 
 aside {
     /* flex: 1; */
     background-color: var(--color1);
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     border-right: 10px solid;
     margin-right: 20px;
     border-color: var(--textColor);
-    width: 150px; 
+    width: 200px; 
 }
 
 aside h2 {
@@ -137,20 +154,25 @@ aside h2 {
 #aboutMe {
     /* background-color: var(--color3); */
     display: flex;
+    padding: 10px;
+    /* margin: 10px; */
     /* width: 49.5%; */
     /* flex-wrap: wrap; */
 }
 
 footer {
-    background-color: var(--color3);
+    /* background-color: var(--color3);
     clear: both;
-    padding: 40px;
+    padding: 40px; */
+    display: flex;
+    padding: 10px;
 }
 
 .border {
     border-style: solid;
     border-color: var(--color2);
     border-width: 5px;
+    padding: 20px;
 }
 
 @media screen and (max-width: 768px) {
