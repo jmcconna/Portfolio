@@ -1,18 +1,10 @@
 # Portfolio
 
+## Description
+
 This website is a portfolio of deployed websites and webapps written by James McConnaughey, demonstrating 
 
 ## Deployed Website
 
-Visit the Portfolio at this link: 
+[Visit the Portfolio at this link](https://jmcconna.github.io/Portfolio/) 
 
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-MIT such and such
