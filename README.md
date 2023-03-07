@@ -2,7 +2,7 @@
 
 ## Description
 
-This website is a portfolio of deployed websites and webapps written by James McConnaughey, demonstrating 
+This website is a portfolio of deployed websites and webapps written by James McConnaughey, demonstrating his skills with HTML, CSS, JavaScript, and more.
 
 ![A screenshot of the website](./assets/images/Portfolio%20screenshot.png)
 
