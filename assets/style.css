@@ -70,15 +70,15 @@ article {
 }
 
 .bigCard {
-    text-align: center;
+    /* align-items: center; */
     border-style: solid;
     border-color: var(--color2);
     border-width: 5px;
     /* padding: 10px; */
-    margin: 10px;
+    margin: 20px;
     /* flex: 2 1 200px; */
     background-color: var(--color1);
-    width: 700px;
+    width: 100%;
     position: relative;
     
 }
@@ -86,7 +86,7 @@ article {
 .bigCard img {
     position: relative;
     /* margin: auto; */
-    max-height: 350px;
+    max-width: 100%;
 
 }
 
@@ -108,22 +108,20 @@ article {
 }
 
 .card {
-    /* text-align: center; */
     border-style: solid;
     border-color: var(--color2);
     border-width: 5px;
-    /* padding: 10px; */
     margin: 10px;
-    /* flex: 1 0 200px; */
     background-color: var(--color1);
     justify-content: space-between;
-    width: 300px;
+    width: 30%;
     position: relative;
     
 }
 
 .card img {
-    max-height: 300px;
+    /* max-height: 300px; */
+    max-width: 100%;
     position: relative;
     /* margin: auto; */
 }
@@ -145,7 +143,7 @@ aside {
     border-right: 10px solid;
     margin-right: 20px;
     border-color: var(--textColor);
-    width: 200px; 
+    width: 20%; 
 }
 
 aside h2 {
@@ -158,7 +156,6 @@ aside h2 {
     padding: 10px;
     /* margin: 10px; */
     /* width: 49.5%; */
-    /* flex-wrap: wrap; */
 }
 
 footer {
