@@ -1,9 +1,9 @@
 :root{
     --textColor: black;
-    --color1: white;
-    --color2: rgb(165, 144, 224);
-    --color3: rgb(173, 207, 207);
-    --color4: rgb(211, 165, 81); 
+    --color1: #ECF9FF;
+    --color2: #FFFBEB;
+    --color3: #FFE7CC;
+    --color4: #F8CBA6; 
 }
 
 /* * {
